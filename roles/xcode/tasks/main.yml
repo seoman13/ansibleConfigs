@@ -1,0 +1,5 @@
+- name: Installing xcode-select
+  shell: xcode-select --install
+
+# - name: Updating Xcode
+  # shell: softwareupdate -i Xcode11

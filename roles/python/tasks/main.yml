@@ -1,0 +1,4 @@
+- pip:
+    name: bottle
+    # executable: pip-3
+    # virtualenv: /my_app/venv

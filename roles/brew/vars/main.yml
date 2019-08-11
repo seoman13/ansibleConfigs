@@ -1,0 +1,32 @@
+---
+# list of applications to install
+# general:
+#   local_home: "{{ lookup('env','HOME') }}"
+
+# homebrew applications
+# applications:
+  # - git
+
+# homebrew cask applications
+cask_applications:
+  - google-chrome
+  - iterm2
+  - docker
+  - 1password
+  - visual-studio-code
+  - skype
+  - iina
+  - sublime-text
+  - postman
+  - zeplin
+  - qbittorrent
+  - the-unarchiver
+  - notion
+  - sourcetree
+  - wireshark
+
+# downloads:
+#    zwift:
+#      name: Zwift
+#      url: http://cdn.zwift.com/app/ZwiftOSX.dmg
+#      dest: "{{general.local_home}}/Downloads/ZwiftOSX.dmg"
