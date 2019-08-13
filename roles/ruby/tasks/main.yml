@@ -1,3 +1,6 @@
-- gem: 
-    name: rubocop
+# Installing ruby gems
+- name: Install gems
+  gem:
+    name: "{{ item }}"
     state: latest
+  with_items: "{{ my_gems }}"
