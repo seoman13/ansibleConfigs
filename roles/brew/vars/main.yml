@@ -4,8 +4,10 @@
 #   local_home: "{{ lookup('env','HOME') }}"
 
 # homebrew applications
-# applications:
-  # - git
+applications:
+  - git
+  - cmake
+  - ninja
 
 # homebrew cask applications
 cask_applications:

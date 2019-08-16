@@ -6,10 +6,3 @@
   roles:
 #     - brew
      - xcode
-#   tasks:
-#     - name: ensure homebrew is updated
-#       homebrew:
-#       state: latest
-#       update_homebrew: yes
-#  tasks:
-#	homebrew:

@@ -1,9 +1,9 @@
 
 # List of ruby gems
 - my_gems:
-    - rvm
     - rubocop
     - carthage
+    - solargraph
     # - fastlane
 
 # sudo installer -pkg "Xcode.dmg"

@@ -1,5 +1,13 @@
-# Installing ruby gems
-- name: Install gems
+- name: Installing rvm
+  shell: \curl -sSL https://get.rvm.io | bash
+
+- name: Install ruby 2.6.3
+  shell: rvm install 2.6.3
+
+- name: Set ruby 2.6.3 as default
+  shell: rvm use 2.6.3
+
+- name: Installing ruby gems
   gem:
     name: "{{ item }}"
     state: latest
