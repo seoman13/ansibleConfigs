@@ -2,7 +2,13 @@
   homebrew:
     state: latest
     update_homebrew: yes
-    
+
+- name: Install brew packages
+  homebrew:
+    name: "{{ item }}"
+    state: latest
+  with_items: "{{ applications }}"
+      
 - name: Install cask packages
   homebrew_cask:
     name: "{{ item }}"

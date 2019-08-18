@@ -1,4 +1,16 @@
-- pip:
-    name: bottle
+vars:
+  brew:
+    - nose
+    - tornado
+    - pillow
+    - bottle
+    - tesseract
+    - poppler
+
+- name: Installing python modules with brew
+  homebrew:
+    name: "{{ item }}"
+    state: latest
     # executable: pip-3
     # virtualenv: /my_app/venv
+  with_items: "{{ brew }}"

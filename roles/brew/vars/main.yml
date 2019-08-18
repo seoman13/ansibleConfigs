@@ -25,6 +25,7 @@ cask_applications:
   - the-unarchiver
   - notion
   - sourcetree
+  - fork
   - wireshark
 
 # downloads:

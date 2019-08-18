@@ -160,7 +160,7 @@ defaults write NSGlobalDomain AppleICUForce24HourTime -bool true
 #   4 -string "H:mm:ss zzzz"
 
 #Download updates automatically in the background
-defaults write /Library/Preferences/com.apple.SoftwareUpdate AutomaticDownload -bool YES
+defaults write /Library/Preferences/com.apple.SoftwareUpdate AutomaticDownload -bool NO
 
 # Install app updates automatically (NO)
 defaults write /Library/Preferences/com.apple.commerce AutoUpdate -bool NO
@@ -176,17 +176,7 @@ defaults write /Library/Preferences/com.apple.commerce AutoUpdateRestartRequired
 # 	Privileges -bool true
 
 # Disable Dashboard (by default)
-defaults write com.apple.dashboard mcx-disabled -boolean YES
-
-# Install Xcode Command Line Tools
-# https://github.com/timsutton/osx-vm-templates/blob/ce8df8a7468faa7c5312444ece1b977c1b2f77a4/scripts/xcode-cli-tools.sh
-# touch /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress;
-# PROD=$(softwareupdate -l |
-#   grep "\*.*Command Line" |
-#   head -n 1 | awk -F"*" '{print $2}' |
-#   sed -e 's/^ *//' |
-#   tr -d '\n')
-# softwareupdate -i "$PROD" -v;
+# defaults write com.apple.dashboard mcx-disabled -boolean YES
 
 # to track all implicitly called defaults write command, add the following to .zshprofile
 # PROMPT_COMMAND='echo "$(history 1 | grep "defaults write")" | sed '/^$/d' >> ~/Documents/defaults-write.txt'

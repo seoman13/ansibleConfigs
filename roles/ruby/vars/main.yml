@@ -4,6 +4,4 @@
     - rubocop
     - carthage
     - solargraph
-    # - fastlane
-
-# sudo installer -pkg "Xcode.dmg"
+    - fastlane

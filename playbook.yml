@@ -4,5 +4,12 @@
 #   become: yes
 #   become_method: sudo
   roles:
-#     - brew
-     - xcode
+    - brew
+    - ruby
+    - python
+    - xcode
+
+  tasks:
+    - name: Restart Mac
+      shell: shutdown -r now
+      become_method: sudo
